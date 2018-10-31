@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+.content1{
+    width: 100%;
+    background-color: white;
+    height: 500px;
+}
+
+.parallax1 {
+    min-height: 900px;
+    background-image: url("Assets/pexels-photo-373076.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    min-height: 370px;
+    background-image: url("Assets/letter-handwriting-family-letters-written-51159.jpeg");
+    opacity: .6;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    min-height: 370px;
+    background-image: url("Assets/pexels-photo-270404.jpeg");
+    opacity: .6;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    margin: 0 auto;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 25%;
+}
+
+@keyframes
