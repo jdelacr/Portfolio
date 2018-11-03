@@ -4,12 +4,18 @@ html {
 
 body {
     background-color: black;
+    animation: opening 6s;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
 }
 
 .content1{
     width: 100%;
     background-color: white;
     height: 500px;
+    padding: 40px;
 }
 
 .parallax1 {
@@ -62,5 +68,20 @@ body {
     text-align: center;
     padding-top: 25%;
 }
+.greetings {
+    position: relative;
+    animation: greetings 2s ease-in-out;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
 
-@keyframes
+@keyframes opening {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes greetings {
+    from {opacity: 0; top: -100px}
+    to {opacity: 1; top: 0;}
+}
