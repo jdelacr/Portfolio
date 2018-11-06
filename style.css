@@ -4,13 +4,23 @@ html {
 
 body {
     background-color: black;
-    animation: opening 6s;
+    animation: opening 3s;
 }
 
 h1 {
     font-family: 'Libre Baskerville', serif;
 }
 
+#Profile_pic {
+    border-radius: 25px;
+}
+
+.Left_img {
+    float: right;
+    transform: skew(20deg);
+    padding-right: 30%;  
+    padding-top: 5%;
+}
 .content1{
     width: 100%;
     background-color: white;
@@ -71,9 +81,24 @@ h1 {
 .greetings {
     position: relative;
     animation: greetings 2s ease-in-out;
-    animation-delay: 4s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
+}
+
+.fa-graduation-cap {
+    font-size: 350px;
+}
+.fa-cogs {
+    font-size: 350px;
+}
+
+div.content1 > p > i.fab {
+    font-size: 50px;
+}
+div.content1 > p > i.fa-star {
+    font-size: 30px;
+    color: gold;
 }
 
 @keyframes opening {
