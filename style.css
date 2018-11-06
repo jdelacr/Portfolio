@@ -101,6 +101,10 @@ div.content1 > p > i.fa-star {
     color: gold;
 }
 
+.slideIn1 {
+    animation: slideIn1 1s ease;
+}
+
 @keyframes opening {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -109,4 +113,10 @@ div.content1 > p > i.fa-star {
 @keyframes greetings {
     from {opacity: 0; top: -100px}
     to {opacity: 1; top: 0;}
+}
+@keyframes slideIn1 {
+    0% {transform: translateX(-1000px); opacity: 0;}
+    50% {transform: skew(-20deg);}
+    52% {transform: skew(-20deg);}
+    100% {transform: translateX(0px);transform: skew(-20deg); opacity: 1;}
 }
