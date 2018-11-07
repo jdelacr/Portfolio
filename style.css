@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: white;
     animation: opening 3s;
 }
 
@@ -22,6 +22,7 @@ h1 {
     padding-top: 5%;
 }
 .content1{
+    position: inherit;
     width: 100%;
     background-color: white;
     height: 500px;
@@ -29,7 +30,7 @@ h1 {
 }
 
 .parallax1 {
-    min-height: 900px;
+    min-height: 1000px;
     background-image: url("Assets/pexels-photo-373076.jpeg");
     background-attachment: fixed;
     background-position: center;
@@ -38,7 +39,7 @@ h1 {
 }
 
 .parallax2 {
-    min-height: 370px;
+    min-height: 500px;
     background-image: url("Assets/letter-handwriting-family-letters-written-51159.jpeg");
     opacity: .6;
     background-attachment: fixed;
@@ -48,7 +49,7 @@ h1 {
 }
 
 .parallax3 {
-    min-height: 370px;
+    min-height: 500px;
     background-image: url("Assets/pexels-photo-270404.jpeg");
     opacity: .6;
     background-attachment: fixed;
@@ -105,6 +106,10 @@ div.content1 > p > i.fa-star {
     animation: slideIn1 1s ease;
 }
 
+.slideIn2 {
+    animation: slideIn2 1s ease-in;
+}
+
 @keyframes opening {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -119,4 +124,10 @@ div.content1 > p > i.fa-star {
     50% {transform: skew(-20deg);}
     52% {transform: skew(-20deg);}
     100% {transform: translateX(0px);transform: skew(-20deg); opacity: 1;}
+}
+
+@keyframes slideIn2 {
+    0% {transform: translateX(-1000px); opacity: 0;}
+    70% {opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
 }
