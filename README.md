@@ -1,9 +1,9 @@
 # Portfolio
 This is my Portfolio for Web Development
 
-#Roadmap
+# Roadmap
 - Add Contacts
-- Create Responsive
+- Create Responsive Web Design
 - Display works from the classes (if possible)
 - Add Navigation
 
