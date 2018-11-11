@@ -11,8 +11,30 @@ h1 {
     font-family: 'Libre Baskerville', serif;
 }
 
-#Profile_pic {
-    border-radius: 25px;
+footer {
+    color: white;
+    height: 800px;
+    background-color: rgb(65, 65, 65);
+    padding: 20% 0 0 25px;
+}
+footer > div{
+    float: left;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.LFooter {
+    text-align: center;
+}
+
+.contacts {
+    padding-left: 20px;
+    border-left: 2px solid white;
+    height: 50%;
+    font-size: 20px;
+}
+.fa-linkedin, .fa-google, .fa-envelope{
+    font-size: 34px;
 }
 
 .Left_img {
@@ -91,6 +113,9 @@ h1 {
     font-size: 350px;
 }
 .fa-cogs {
+    font-size: 350px;
+}
+.fa-user-tie {
     font-size: 350px;
 }
 
