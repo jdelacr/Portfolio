@@ -1,158 +1,182 @@
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    background-color: white;
-    animation: opening 3s;
+body, html {
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
 }
 
-h1 {
-    font-family: 'Libre Baskerville', serif;
+section {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
 }
 
 footer {
-    color: white;
-    height: 800px;
-    background-color: rgb(65, 65, 65);
-    padding: 20% 0 0 25px;
-}
-footer > div{
-    float: left;
-    width: 50%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 35%;
+    padding: 5% 0% 5% 15%;
 }
 
-.LFooter {
-    text-align: center;
-}
-
-.contacts {
-    padding-left: 20px;
-    border-left: 2px solid white;
-    height: 50%;
-    font-size: 20px;
-}
-.fa-linkedin, .fa-google, .fa-envelope{
-    font-size: 34px;
-}
-
-.Left_img {
-    float: right;
-    transform: skew(20deg);
-    padding-right: 30%;  
-    padding-top: 5%;
-}
-.content1{
-    position: inherit;
-    width: 100%;
-    background-color: white;
-    height: 500px;
-    padding: 40px;
-}
-
-.parallax1 {
-    min-height: 1000px;
-    background-image: url("Assets/pexels-photo-373076.jpeg");
+#header {
+    background-image: url("Assets/headerbackground.jpg");
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.parallax2 {
-    min-height: 500px;
-    background-image: url("Assets/letter-handwriting-family-letters-written-51159.jpeg");
-    opacity: .6;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax3 {
-    min-height: 500px;
-    background-image: url("Assets/pexels-photo-270404.jpeg");
-    opacity: .6;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallelogram {
-    position: relative;
-    top: -20px;
-    left: -100px;
-    float: left;
-    width: 800px;
-	height: 550px;
-	transform: skew(-20deg);
+.about {
     background: white;
-    z-index: 1;
-    box-shadow: 10px 0px 10px gray;
-}
-
-.caption {
-    margin: 0 auto;
     color: black;
-    font-family: 'Libre Baskerville', serif;
-    font-size: 34px;
+}
+
+.skill {
+    background: #a6e0fc;
+    color: white;
+}
+
+.portfolio {
+    background: white;
+    color: black;
+}
+
+.contact {
+    background: #333333;
+    color: white;
+}
+
+.lists {
+    background: white;
+    color: black;
+    display: grid;
+    padding: 10%;
+    grid-template-columns: auto auto auto;
+    border-radius: 50px;
+    height: 100%;
+}
+
+#Skill {
+    height: 80%;
+}
+
+.lists > div {
     text-align: center;
-    padding-top: 25%;
-}
-.greetings {
-    position: relative;
-    animation: greetings 2s ease-in-out;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
 
-.fa-graduation-cap {
-    font-size: 350px;
-}
-.fa-cogs {
-    font-size: 350px;
-}
-.fa-user-tie {
-    font-size: 350px;
+.border-color {
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 2px 0px 2px;
 }
 
-div.content1 > p > i.fab {
-    font-size: 50px;
-}
-div.content1 > p > i.fa-star {
-    font-size: 30px;
-    color: gold;
+li {
+    list-style: none;
 }
 
-.slideIn1 {
-    animation: slideIn1 1s ease;
+.endpage {
+    background-color: #45C3FF;
+    height: 5%;
+}
+.logo {
+    color: white;
+    fill: white;
+    display: block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 
-.slideIn2 {
-    animation: slideIn2 1s ease-in;
+section.skill {
+    background-image: url('Assets/endseparator.svg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
-@keyframes opening {
-    from {opacity: 0;}
-    to {opacity: 1;}
+section.portfolio {
+    background-image: url('Assets/portseparator.svg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
-@keyframes greetings {
-    from {opacity: 0; top: -100px}
-    to {opacity: 1; top: 0;}
+section.about {
+    background-image: url('Assets/aboutseparator.svg');
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
-@keyframes slideIn1 {
-    0% {transform: translateX(-1000px); opacity: 0;}
-    50% {transform: skew(-20deg);}
-    52% {transform: skew(-20deg);}
-    100% {transform: translateX(0px);transform: skew(-20deg); opacity: 1;}
+svg.hidden {
+    display: none;
 }
 
-@keyframes slideIn2 {
-    0% {transform: translateX(-1000px); opacity: 0;}
-    70% {opacity: 0;}
-    100% {transform: translateX(0px); opacity: 1;}
+nav {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    right: 0;
+    position: fixed;
+    top: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 24px;
+    color: darkgray;
+}
+nav > ul > li > a:hover {
+    text-decoration: none;
+    color: white;
+}
+nav > a {
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgray;
+}
+nav > a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+span#openbtn {
+    font-size: 52px;
+    position: fixed;
+    position: -webkit-sticky;
+    right: 30px;
+    text-decoration: none;
+}
+span#openbtn > a{
+    text-decoration: none;
+    color: #333333;
+}
+a.closebtn {
+    padding-left: 30px;
+}
+div#skill_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+    div#Skill {
+        display: none;
+    }
+    div#skill_mobile {
+        display: block;
+    }
+    div#skill_mobile > div{
+        display: grid;
+        background-color: white;
+        grid-template-columns: 50% 50%;
+        color: black;
+        padding: 2%;
+        border-radius: 15px;
+        margin-top: 20%;
+    }
+    section.skill {
+        height: 100%;
+    }
 }
