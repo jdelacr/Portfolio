@@ -13,10 +13,29 @@ section {
 }
 
 footer {
-    display: grid;
-    grid-template-columns: auto auto;
     height: 35%;
-    padding: 5% 0% 5% 15%;
+}
+.sitemap {
+    font-size: 17px;
+    padding: 10%;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.social {
+    text-align: center;
+    padding-top: 5%;
+    height: 100%;
+    margin-left: 50%;
+    width: 50%;
+}
+footer > div > a {
+    color: darkgray;
+}
+footer > div > a:hover {
+    color: white;
+    text-decoration: none;
 }
 
 #header {
@@ -227,6 +246,18 @@ figure > a {
 figure > a:hover {
     color: black;
 }
+div.social > span a {
+    color: darkgray;
+    font-size: 34px;
+    margin: 2%;
+    transition: .2s ease-in;
+}
+div.social > span a:hover {
+    color: white;
+    font-size: 42px;
+    padding: 2%;
+}
+
 
 @media only screen and (max-width: 480px){
     div#Skill {
@@ -247,4 +278,22 @@ figure > a:hover {
     section.skill {
         height: 100%;
     }
+    div#about > img {
+        height: 50%;
+        width: 50%;
+    }
+    figure {
+        width: 100%;
+    }
+    div.sitemap {
+        display: none;
+    }
+    div.social {
+        padding-top: 10%;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+
+
 }

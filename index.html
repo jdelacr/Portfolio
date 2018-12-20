@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Portfolio</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
@@ -89,29 +90,29 @@
       </div>
       <div id="skill_mobile">
           <h2>Skill Proficiency</h2>
-          <div>
-            <div><h4>Beginner</h4></div>
+          <div class="lists2">
+            <div><h4 class="SH2">Beginner</h4></div>
             <div>
               <ul>
-                <li>Java</li>
-                <li>Photshop</li>
-                <li>After Effect</li>
-                <li>SQL</li>
-                <li>AJAX</li>
+                <li class="B2">Java</li>
+                <li class="B2">Photshop</li>
+                <li class="B2">After Effect</li>
+                <li class="B2">SQL</li>
+                <li class="B2">AJAX</li>
               </ul></div>
-            <div><h4>Intermediate</h4></div>
+            <div><h4 class="SH3">Intermediate</h4></div>
             <div><ul>
-                <li>PHP</li>
-                <li>jQuery</li>
-                <li>GitHub</li>
-                <li>Bootstrap</li>
-                <li>Responsive Design</li>
+                <li class="I2">PHP</li>
+                <li class="I2">jQuery</li>
+                <li class="I2">GitHub</li>
+                <li class="I2">Bootstrap</li>
+                <li class="I2">Responsive Design</li>
               </ul></div>
-            <div><h4>Expert</h4></div>
+            <div><h4 class="SH4">Expert</h4></div>
             <div><ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li class="E2">HTML</li>
+                <li class="E2">CSS</li>
+                <li class="E2">JavaScript</li>
               </ul></div>
           </div>
             
@@ -134,10 +135,15 @@
 
     <footer id="myContact" class="contact">
       <div class="sitemap">
-        HOME | ABOUT | SKILLS | PORTFOLIO
+        <a href="#">HOME</a> | <a href="#about">ABOUT</a> | <a href="#Skill">SKILL</a> | <a href="#portfolio">PORTFOLIO</a>
       </div>
       <div class="social">
         <h2>- Get In Touch -</h2>
+        <span><a href="https://github.com/jdelacr"><i class="fab fa-github-alt"></i></a></span>
+        <span><a href="mailto:blitzersonicz@gmail.com"> <i class="fab fa-google"></i></a></span>
+        <span><a href="https://www.instagram.com/janjustyn/?hl=en"><i class="fab fa-instagram"></i></a></span>
+        <span><a href="https://www.linkedin.com/in/janjustyn/"><i class="fab fa-linkedin"></i></a></span>
+        <span><a href="mailto:jdelacr@masonlive.gmu.edu"><i class="fas fa-envelope"></i></a></span>
       </div>
     </footer>
     <div class="endpage"><svg width="100%" height="100%" viewBox="0 0 1280 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M0,800l160,-99l265,99l264,-150l160,150l258,-198l173,198" style="fill:#137aab;"/><path d="M0,800l267,-89l215,89l565,-198l233,198l-1280,0" style="fill:#fff;"/></svg></div>
@@ -155,6 +161,16 @@
       ScrollReveal().reveal('.B1', {interval: 200,delay: 500, origin: 'left'});
       ScrollReveal().reveal('.I1', {delay: 1000,interval: 200, origin: 'bottom'});
       ScrollReveal().reveal('.E1', {delay: 2000, interval: 200, origin: 'right'});
+
+      ScrollReveal().reveal('.SH2', {interval: 200});
+      ScrollReveal().reveal('.B2', {interval: 200,delay: 200, origin: 'left'});
+      ScrollReveal().reveal('.SH3', {interval: 200, delay: 1200,});
+      ScrollReveal().reveal('.I2', {delay: 1700,interval: 200, origin: 'left'});
+      ScrollReveal().reveal('.SH4', {interval: 200, delay: 3000,});
+      ScrollReveal().reveal('.E2', {delay: 3500, interval: 200, origin: 'left'});
+
+      ScrollReveal().reveal('div#Portfolio>h2', {interval: 200, origin: 'top'});
+      ScrollReveal().reveal('figure', {delay: 500,interval: 200, origin: 'bottom'});
     </script>
   </body>
 </html>
