@@ -293,6 +293,10 @@ div.social > span a:hover {
         margin-left: 0%;
         width: 100%;
     }
+    span#openbtn{
+        font-size: 42px;
+        right: 5px;
+    }
 
 
 
