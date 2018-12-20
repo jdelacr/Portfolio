@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
     
     <link rel="stylesheet" href="style.css">
@@ -18,7 +19,7 @@
         $("span#openbtn").click(function () {
           $("nav").animate({width: "250px"}, "swing");
         });
-        $("a.closebtn").click(function () {
+        $("span.closebtn").click(function () {
           $("nav").animate({width: "0px"}, "swing");
         });
       });
@@ -26,9 +27,9 @@
   </head>
   <body>
     <!--Navigation-->
-    <span id="openbtn"><a href="#">&#9776;</a></span>
+    <span id="openbtn">&#9776;</span>
     <nav>
-        <a href="#" class="closebtn">&times;</a>
+        <span class="closebtn">&times;</span>
       <ul>
         <li><a href="#header">HOME</a></li>
         <li><a href="#about">ABOUT ME</a></li>
@@ -46,6 +47,8 @@
     <section class="about">
       <div id="about">
         <h2>About Me</h2>
+        <img src="Assets/pic.png" alt="Profile Picture">
+        <p>Hi, My name is Jan Justyn Dela Cruz. I'm an aspiring web developer hoping to become a frontend or a full stack developer. I am currently a student in George Mason University graduating in 2020.</p>
         
       </div>
     </section>
@@ -55,31 +58,31 @@
         <h2>Skill Proficiency</h2>
           <div class="lists">
             <div>
-              <h2>Beginner</h2>
+              <h2 class="SH1">Beginner</h2>
               <ul>
-                <li>Java</li>
-                <li>Photshop</li>
-                <li>After Effect</li>
-                <li>SQL</li>
-                <li>AJAX</li>
+                <li class="B1">Java</li>
+                <li class="B1">Photshop</li>
+                <li class="B1">After Effect</li>
+                <li class="B1">SQL</li>
+                <li class="B1">AJAX</li>
               </ul>
             </div>
             <div class="border-color">
-              <h2>Intermediate</h2>
+              <h2 class="SH1">Intermediate</h2>
               <ul>
-                <li>PHP</li>
-                <li>jQuery</li>
-                <li>GitHub</li>
-                <li>Bootstrap</li>
-                <li>Responsive Design</li>
+                <li class="I1">PHP</li>
+                <li class="I1">jQuery</li>
+                <li class="I1">GitHub</li>
+                <li class="I1">Bootstrap</li>
+                <li class="I1">Responsive Design</li>
               </ul>
             </div>
             <div>
-              <h2>Expert</h2>
+              <h2 class="SH1">Expert</h2>
               <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li class="E1">HTML</li>
+                <li class="E1">CSS</li>
+                <li class="E1">JavaScript</li>
               </ul>
             </div>
           </div>
@@ -119,6 +122,13 @@
     <section class="portfolio">
       <div id="Portfolio">
         <h2>Portfolio</h2>
+        <figure>
+          <a href="http://mason.gmu.edu/~jdelacr/IT331/index.html">
+          <img class="image" src="Assets/cookie_sandwich.jpg" alt="IT 331 Project">
+          <figcaption>IT 331 Project</figcaption>
+          </a>
+        </figure>
+        </div>
       </div>
     </section>
 
@@ -131,5 +141,20 @@
       </div>
     </footer>
     <div class="endpage"><svg width="100%" height="100%" viewBox="0 0 1280 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><path d="M0,800l160,-99l265,99l264,-150l160,150l258,-198l173,198" style="fill:#137aab;"/><path d="M0,800l267,-89l215,89l565,-198l233,198l-1280,0" style="fill:#fff;"/></svg></div>
+
+    <script>
+      ScrollReveal({ distance: '60px' });
+      ScrollReveal().reveal('div#about',{viewFactor: 0.5});
+      ScrollReveal().reveal('div#about>h2', {origin: 'top'});
+      ScrollReveal().reveal('div#about>p', {delay: 500,origin: 'left'});
+      ScrollReveal().reveal('div#about>img', {delay: 700,origin: 'bottom'});
+
+      ScrollReveal().reveal('div#Skill',{viewFactor: 0.5});
+      
+      ScrollReveal().reveal('.SH1', {interval: 200});
+      ScrollReveal().reveal('.B1', {interval: 200,delay: 500, origin: 'left'});
+      ScrollReveal().reveal('.I1', {delay: 1000,interval: 200, origin: 'bottom'});
+      ScrollReveal().reveal('.E1', {delay: 2000, interval: 200, origin: 'right'});
+    </script>
   </body>
 </html>

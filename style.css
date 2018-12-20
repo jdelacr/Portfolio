@@ -115,7 +115,7 @@ svg.hidden {
 nav {
     height: 100%;
     width: 0;
-    z-index: 1;
+    z-index: 5;
     right: 0;
     position: fixed;
     top: 0;
@@ -148,16 +148,84 @@ span#openbtn {
     position: -webkit-sticky;
     right: 30px;
     text-decoration: none;
+    z-index: 1;
+}
+span#openbtn:hover{
+    cursor: pointer;
 }
 span#openbtn > a{
     text-decoration: none;
     color: #333333;
 }
-a.closebtn {
+span.closebtn {
     padding-left: 30px;
+    text-decoration: none;
+    font-size: 34px;
+    color: darkgray;
 }
+span.closebtn:hover{
+    color: white;
+    cursor: pointer;
+}
+
 div#skill_mobile {
     display: none;
+}
+
+html.sr .B1{
+    visibility: hidden;
+}
+
+div#about > p {
+    width: 50%;
+}
+div#about > img {
+    float: right;
+    border-radius: 50px;
+    box-shadow: 10px 10px #45C3FF;
+}
+div#Portfolio > div > div > div >img {
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    position: relative;
+    width: 33.33%;
+    overflow: hidden;
+}
+.image {
+    transition:  all .3s ease-in;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    backface-visibility: hidden;
+}
+figcaption {
+    font-size: 24px;
+    transition: .5s ease-in;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    
+}
+figure:hover .image{
+    opacity: 0.3;
+    transform: scale(1.5);
+}
+
+figure:hover figcaption {
+    opacity: 1;
+}
+figure > a {
+    color: black;
+}
+figure > a:hover {
+    color: black;
 }
 
 @media only screen and (max-width: 480px){
