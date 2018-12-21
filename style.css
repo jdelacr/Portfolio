@@ -203,15 +203,15 @@ div#about > img {
     border-radius: 50px;
     box-shadow: 10px 10px #45C3FF;
 }
-div#Portfolio > div > div > div >img {
-    width: 100%;
-    height: 100%;
-}
 
 figure {
-    position: relative;
-    width: 33.33%;
+    width: 30%;
+    float: left;
+    margin-right: 1%;
     overflow: hidden;
+}
+.clear {
+    clear: both;
 }
 .image {
     transition:  all .3s ease-in;
@@ -231,6 +231,9 @@ figcaption {
     text-align: center;
     transform: translate(-50%, -50%);
     
+}
+figcaption>span {
+    font-size: 12px;
 }
 figure:hover .image{
     opacity: 0.3;
