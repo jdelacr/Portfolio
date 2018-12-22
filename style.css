@@ -232,8 +232,9 @@ figcaption {
     transform: translate(-50%, -50%);
     
 }
-figcaption>span {
+figcaption > a > span {
     font-size: 12px;
+    line-height: .6;
 }
 figure:hover .image{
     opacity: 0.3;
@@ -243,11 +244,12 @@ figure:hover .image{
 figure:hover figcaption {
     opacity: 1;
 }
-figure > a {
+figcaption > a {
     color: black;
 }
-figure > a:hover {
+figcaption > a:hover {
     color: black;
+    text-decoration: none;
 }
 div.social > span a {
     color: darkgray;
